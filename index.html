@@ -1,40 +1,162 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background="./examples/assets/first.png">
+				<h1>React</h1>
+				<span style="color: #93a1a1; font-size: 22px;">Author <a href="https://github.com/JacksonFrontEnd">Yauheni
+						Papasiomau</a></span>
+				<br>
+				<br>
+				<br>
+				<br>
+			</section>
+
+			<section id="fragments" data-background="#674ea7">
+				<h2>INTRODUCTION</h2>
+				<ul>
+					In this presentation I want to talk about:
+					<li class="fragment">What is react</li>
+					<li class="fragment">History of react</li>
+					<li class="fragment">Main features of the react</li>
+					<li class="fragment">Advantages and disadvantages of react</li>
+					<li class="fragment">Conclusion</li>
+				</ul>
+			</section>
+			<section data-background="#4a86e8">
+				<section>
+					<h2>What is React</h2>
+					<p class="fragment" style="color: #fff"> React – an open source JavaScript library for building user
+						interfaces.</p>
+					<p class="fragment" style="color: #fff"> React can be used to develop single page and mobile apps.</p>
+					<p class="fragment" style="color: #fff">Its goal is to provide high speed, simplicity and scalability. As a
+						library for developing user interfaces, React is often used with other libraries such as MobX, Redux, and
+						GraphQL.</p>
+				</section>
+				<section>
+					<p style="color: #fff">React is the most popular javascript framework among all the rest. This is evidenced by
+						statistics on the frequency of use of a particular framework by developers throughout the year.</p>
+					<img src="./examples/assets/statistics.png" alt="statistics" style="margin-top: -10px">
+				</section>
+			</section>
+			<section data-background="#6aa84f">
+				<section>
+					<h2 style="color: #fff">History of developing</h2>
+					<p style="color: #fff" class="fragment">In 2011, Jordan Wolk, inspired by the results of XHP, creates the
+						React prototype, FaxJs. But FaxJs remained just an experimental project and in 2012 Jordan Wolk was already
+						working on a React prototype.</p>
+					<p style="color: #fff" class="fragment">It is worth noting that the idea of creating what would later be
+						called React arose when the Facebook Ads team faced serious problems associated with both writing and
+						understanding code on projects, and managing the state of the application. </p>
+				</section>
+				<section data-background="#6495ED">
+					<p style="color: #fff">In those days, it was popular to manage the state of the application thanks to
+						mutations, as a result, with the growth of the project, it became more and more difficult to understand
+						which action or event and at what point caused certain changes in the application.</p>
+					<p style="color: #fff" class="fragment">Application behavior became unpredictable. Also, any change on the
+						page, even a minor one, often provoked a re-rendering of the entire application. Then the idea arose to
+						create such a tool that would take advantage of an immutable approach to data management and allow you to
+						write code in a declarative style.</p>
+				</section>
+				<section data-background="#6495ED">
+					<p style="color: #fff">At first, the public regarded React with distrust, and some thought it was a big step
+						back</p>
+					<p style="color: #fff" class="fragment">But with the support of Facebook, Netflix, Airbnb and the release of
+						React Native, as well as ease of learning and continuous improvement, React quickly gained public confidence
+						and became the most popular front-end library in 2016.</p>
+					<p style="color: #fff" class="fragment">Now React does not stop in its development and continues to work on
+						improving performance, experience of interaction of programmers with the library and to this day remains the
+						most popular front-end library and one of the best options for cross-platform projects.</p>
+				</section>
+			</section>
+			<section data-background="#00273f">
+				<section>
+					<h2>Main features of the react</h2>
+					<p style="color: #bdc2c1" class="fragment">Unidirectional data transfer</p>
+					<p style="color: #bdc2c1" class="fragment">Properties are passed from parent to child components. Components
+						receive properties as a set of immutable values, so a component cannot directly modify properties, but can
+						invoke changes through callback functions. This mechanism is called "properties down, events up".</p>
+				</section>
+
+				<section>
+					<p style="color: #bdc2c1">Virtual DOM</p>
+					<p style="color: #bdc2c1">React uses virtual DOM. React creates an in-memory cache structure that allows you
+						to calculate the difference between the previous and current state of the interface to optimally update the
+						browser's DOM. Thus, the programmer can work with the page, assuming that it is being updated as a whole,
+						but the library itself decides which page components need to be updated.</p>
+				</section>
+				<section>
+					<p style="color: #bdc2c1">JSX</p>
+					<p style="color: #bdc2c1">JavaScript XML (JSX) is a JavaScript syntax extension that allows you to use
+						HTML-like syntax to describe the structure of an interface. Typically, components are written using JSX, but
+						there is also the option of using regular JavaScript.</p>
+				</section>
+			</section>
+			<section data-background="#f1c232">
+				<section>
+					<h2>Advantages and Disadvantages of React</h2>
+					<ul>
+						Advantages:
+						<li class="fragment">Based on simple programming languages.</li>
+						<li class="fragment">Extreme flexibility of the application.</li>
+						<li class="fragment">The application can withstand heavy loads.</li>
+						<li class="fragment">React and SEO interact well</li>
+						<li class="fragment">Ensures the immutability of parental data.</li>
+						<li class="fragment">Has an open data library.</li>
+						<li class="fragment">Low weight of the database</li>
+						<li class="fragment">Hybrid mobile applications in React look almost identical to native ones</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						Disadvantages:
+						<li class="fragment">Disordered documentation.</li>
+						<li class="fragment">The large selection of tools is baffling.</li>
+						<li class="fragment">It takes a long time to master all the nuances.</li>
+					</ul>
+				</section>
+			</section>
+			<section data-background="#674ea7">
+				<h2>Conclusion</h2>
+				<p>In conclusion, I want to say that React is a very good technology with great potential, and thanks to its many advantages, it is the most popular framework that continues to evolve and improve itself.</p>
+			</section>
+			<section data-background="./examples/assets/last.png">
+				<h2>The End</h2>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
